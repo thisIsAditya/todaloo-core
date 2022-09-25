@@ -2,17 +2,12 @@ import mongoose from "mongoose";
 
 const NoteSchema = new mongoose.Schema(
   {
-    title: {
+    text: {
+      type: String,
+    },
+    category: {
       type: String,
       required: true,
-    },
-    description: {
-      type: String,
-    },
-    status: {
-      type: String,
-      default: "incomplete",
-      enum: ["incomplete", "completed"],
     },
   },
   {
