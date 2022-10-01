@@ -3,7 +3,7 @@ import handleError from "../utils/handleError.js";
 import { Note } from "../models/notes-model.js";
 
 export const addItem = handleError(async (req, res) => {
-  if (!req.body.title) throw new CustomError(400, "Require Title");
+  if (!req.body.text) throw new CustomError(400, "Require Text");
   const item = new Note({
     ...req.body,
   });
