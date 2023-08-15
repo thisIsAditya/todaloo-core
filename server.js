@@ -8,7 +8,7 @@ import IndexRouter from "./resources/routes/index.js";
 
 //Declaratons
 const app = express();
-const PORT = SECRETS.PORT || 8080;
+const PORT = SECRETS.PORT || 80;
 
 //Middleware
 app.use(json());
