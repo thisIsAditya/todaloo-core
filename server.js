@@ -17,7 +17,7 @@ app.use(morgan("dev"));
 
 //Routes
 const successString =
-  '<div style="display : flex;justify-content:center"><h1><i>Server is Running!</i></h1></div>';
+  '<div style="display : flex;justify-content:center"><h1><i>Server is Running!</i></h1><p>CI/CD Pipeline working via Github Actions<p></div>';
 
 app.get("/", (req, res) => res.status(200).send(successString));
 app.use("/api", IndexRouter);
