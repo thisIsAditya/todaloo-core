@@ -4,10 +4,12 @@ const NoteSchema = new mongoose.Schema(
   {
     text: {
       type: String,
-    },
-    category: {
-      type: String,
       required: true,
+    },
+    priority: {
+      type: Number,
+      default: 0,
+      enum: [0, 1, 2, 3],
     },
   },
   {
