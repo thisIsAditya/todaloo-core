@@ -18,7 +18,7 @@ app.use(morgan("dev"));
 //Routes
 const successStringCSS =
   "display: flex; justify-content: center; flex-direction: column; align-items: center;";
-const successString = `<div style=${successStringCSS}><h1><i>Server is Running!</i></h1><p>CI/CD Pipeline working via Github Actions<p></div>`;
+const successString = `<div style=${successStringCSS}><h1><i>Server is Running!</i></h1><p>CI/CD Pipeline working via Jenkins<p></div>`;
 
 app.get("/", (req, res) => res.status(200).send(successString));
 app.use("/api", IndexRouter);
